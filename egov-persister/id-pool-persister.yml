@@ -14,7 +14,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.idPool.*
       queryMaps:
-        - query: INSERT INTO health.id_pool (id, status, tenantId, additionalFields, createdBy, lastModifiedBy, createdTime, lastModifiedTime, rowVersion)
+        - query: INSERT INTO id_pool (id, status, tenantId, additionalFields, createdBy, lastModifiedBy, createdTime, lastModifiedTime, rowVersion)
             VALUES (?, 'UNASSIGNED', ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT (id) DO NOTHING;
           basePath: $.idPool.*
@@ -44,7 +44,7 @@ serviceMaps:
       auditAttributeBasePath: $.idPool.*
       queryMaps:
         - query: |
-            UPDATE health.id_pool SET status = ?, lastModifiedBy = ?, lastModifiedTime = ?, additionalFields = ?
+            UPDATE id_pool SET status = ?, lastModifiedBy = ?, lastModifiedTime = ?, additionalFields = ?
             WHERE id = ?;
           basePath: $.idPool.*
           jsonMaps:

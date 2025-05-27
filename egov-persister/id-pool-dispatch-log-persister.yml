@@ -14,7 +14,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.idTransactionLog.*
       queryMaps:
-        - query: INSERT INTO health.id_transaction_log(id_reference, user_uuid, device_uuid, device_info, status, tenantId, additionalFields, createdBy, lastModifiedBy, createdTime, lastModifiedTime, rowVersion)
+        - query: INSERT INTO id_transaction_log(id_reference, user_uuid, device_uuid, device_info, status, tenantId, additionalFields, createdBy, lastModifiedBy, createdTime, lastModifiedTime, rowVersion)
             VALUES (?, ?, ?, ? , ? , ? , ?, ?, ?, ?, ?, ?)
 
           basePath: $.idTransactionLog.*
