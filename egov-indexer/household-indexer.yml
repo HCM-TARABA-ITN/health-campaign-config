@@ -18,13 +18,13 @@ ServiceMaps:
           timeStampField: $.household.clientAuditDetails.lastModifiedTime
         - name: user-sync-index-v1
           type: users
-          id: $.id
+          id: $.household.clientReferenceId
           isBulk: true
           jsonPath: $
           customJsonMapping:
             indexMapping: { "Data": {} }
             fieldMapping:
-              - inJsonPath: $.createdBy
+              - inJsonPath: $.household.clientAuditDetails.createdBy
                 outJsonPath: $.Data.syncedUserId
               - inJsonPath: $.userName
                 outJsonPath: $.Data.syncedUserName
