@@ -48,7 +48,7 @@ ServiceMaps:
                 outJsonPath: $.Data.userAddress
               - inJsonPath: $.additionalDetails
                 outJsonPath: $.Data.additionalDetails
-          timeStampField: $.createdTime
+          timeStampField: $.household.clientAuditDetails.createdtime
     - topic: delete-household-topic
       configKey: INDEX
       indexes:
