@@ -10,7 +10,7 @@ serviceMaps:
       module: PLAN
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.auditDetails.createdBy
+      # userUuidJsonPath: $.auditDetails.createdBy
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.PlanConfiguration
       queryMaps:
@@ -103,7 +103,7 @@ serviceMaps:
       module: PLAN
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.auditDetails.createdBy
+      # userUuidJsonPath: $.auditDetails.createdBy
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.PlanConfiguration
       queryMaps:

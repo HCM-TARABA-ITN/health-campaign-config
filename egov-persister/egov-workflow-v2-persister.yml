@@ -9,7 +9,7 @@ serviceMaps:
     module: WORKFLOW
     objecIdJsonPath: $.id
     tenantIdJsonPath: $.tenantId
-    userUuidJsonPath: $.RequestInfo.userInfo.uuid
+    # userUuidJsonPath: $.RequestInfo.userInfo.uuid
     transactionCodeJsonPath: $.businessId
     auditAttributeBasePath: $.ProcessInstances.*
     queryMaps:
@@ -108,7 +108,7 @@ serviceMaps:
     module: WORKFLOW-BUSINESS
     objecIdJsonPath: $.id
     tenantIdJsonPath: $.tenantId
-    userUuidJsonPath: $.RequestInfo.userInfo.uuid
+    # userUuidJsonPath: $.RequestInfo.userInfo.uuid
     transactionCodeJsonPath: $.BusinessServices.*.business
     auditAttributeBasePath: $.BusinessServices.*
     queryMaps:
@@ -211,7 +211,7 @@ serviceMaps:
     module: WORKFLOW-BUSINESS-UPDATE
     objecIdJsonPath: $.id
     tenantIdJsonPath: $.tenantId
-    userUuidJsonPath: $.RequestInfo.userInfo.uuid
+    # userUuidJsonPath: $.RequestInfo.userInfo.uuid
     transactionCodeJsonPath: $.BusinessServices.*.business
     auditAttributeBasePath: $.BusinessServices.*
     queryMaps:

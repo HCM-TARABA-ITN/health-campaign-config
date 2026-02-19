@@ -9,7 +9,7 @@ serviceMaps:
       module: PROJECT
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.clientReferenceId
       auditAttributeBasePath: $.*
       queryMaps:
@@ -49,7 +49,7 @@ serviceMaps:
       module: PROJECT
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.clientReferenceId
       auditAttributeBasePath: $.*
       queryMaps:
@@ -84,7 +84,7 @@ serviceMaps:
       module: PROJECT
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.clientReferenceId
       auditAttributeBasePath: $.*
       queryMaps:

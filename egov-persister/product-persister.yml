@@ -9,7 +9,7 @@ serviceMaps:
       module: PRODUCT
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
@@ -39,7 +39,7 @@ serviceMaps:
       module: PRODUCT
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
@@ -67,7 +67,7 @@ serviceMaps:
       module: PRODUCT
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
@@ -97,7 +97,7 @@ serviceMaps:
       module: PRODUCT
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:

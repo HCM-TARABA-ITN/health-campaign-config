@@ -10,7 +10,7 @@ serviceMaps:
     module: USER-EVENT
     objecIdJsonPath: $.id
     tenantIdJsonPath: $.tenantId
-    userUuidJsonPath: $.RequestInfo.userInfo.uuid
+    # userUuidJsonPath: $.RequestInfo.userInfo.uuid
     transactionCodeJsonPath: $.clientReferenceId
     auditAttributeBasePath: $.*
     queryMaps:
@@ -85,7 +85,7 @@ serviceMaps:
     module: USER-EVENT-UPDATE
     objecIdJsonPath: $.id
     tenantIdJsonPath: $.tenantId
-    userUuidJsonPath: $.RequestInfo.userInfo.uuid
+    # userUuidJsonPath: $.RequestInfo.userInfo.uuid
     transactionCodeJsonPath: $.clientReferenceId
     auditAttributeBasePath: $.*
     queryMaps:

@@ -9,7 +9,7 @@ serviceMaps:
       module: FACILITY
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.clientReferenceId
       auditAttributeBasePath: $.*
       queryMaps:
@@ -62,7 +62,7 @@ serviceMaps:
       module: FACILITY-UPDATE
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.lastModifiedBy
+      # userUuidJsonPath: $.[0].auditDetails.lastModifiedBy
       transactionCodeJsonPath: $.clientReferenceId
       auditAttributeBasePath: $.*
       queryMaps:
@@ -127,7 +127,7 @@ serviceMaps:
       module: FACILITY-DELETE
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.lastModifiedBy
+      # userUuidJsonPath: $.[0].auditDetails.lastModifiedBy
       transactionCodeJsonPath: $.clientReferenceId
       auditAttributeBasePath: $.*
       queryMaps:

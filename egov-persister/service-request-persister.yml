@@ -12,7 +12,7 @@ serviceMaps:
       tenantIdJsonPath: $.tenantId
       transactionCodeJsonPath: $.id
       #below twofields of audit are applied on the whole object recieved in the kafka
-      userUuidJsonPath: $.RequestInfo.userInfo.uuid
+      # userUuidJsonPath: $.RequestInfo.userInfo.uuid
       auditAttributeBasePath: $.ServiceDefinition
       queryMaps:
 
@@ -94,7 +94,7 @@ serviceMaps:
       tenantIdJsonPath: $.tenantId
       transactionCodeJsonPath: $.referenceId
       #below twofields of audit are applied on the whole object recieved in the kafka
-      userUuidJsonPath: $.RequestInfo.userInfo.uuid
+      # userUuidJsonPath: $.RequestInfo.userInfo.uuid
       auditAttributeBasePath: $.Service
       queryMaps:
 

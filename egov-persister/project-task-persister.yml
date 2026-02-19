@@ -12,7 +12,7 @@ serviceMaps:
       tenantIdJsonPath: $.tenantId
       transactionCodeJsonPath: $.clientReferenceId
       #below twofields of audit are applied on the whole object recieved in the kafka
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       auditAttributeBasePath: $.*        
       queryMaps:
         - query: INSERT INTO PROJECT_TASK(id, clientReferenceId, tenantId, projectId, projectBeneficiaryId, projectBeneficiaryClientReferenceId, plannedStartDate, plannedEndDate, actualStartDate, actualEndDate, addressId, status, additionalDetails, createdBy, createdTime, lastModifiedBy, lastModifiedTime, rowVersion, isDeleted, clientCreatedTime, clientLastModifiedTime, clientCreatedBy, clientLastModifiedBy) VALUES (?, ?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);
@@ -95,7 +95,7 @@ serviceMaps:
       tenantIdJsonPath: $.tenantId
       transactionCodeJsonPath: $.clientReferenceId
       #below twofields of audit are applied on the whole object recieved in the kafka
-      userUuidJsonPath: $.[0].auditDetails.lastModifiedBy
+      # userUuidJsonPath: $.[0].auditDetails.lastModifiedBy
       auditAttributeBasePath: $.*        
       queryMaps:
         - query: UPDATE PROJECT_TASK SET tenantId = ?, projectId = ?, projectBeneficiaryId = ?, projectBeneficiaryClientReferenceId = ?, addressId = ?, plannedStartDate = ?, plannedEndDate = ?, actualStartDate = ?, actualEndDate = ?, status = ?, additionalDetails = ?, lastModifiedBy = ?, lastModifiedTime = ?, rowVersion = ?, isDeleted = ?, clientLastModifiedTime = ?, clientLastModifiedBy = ? WHERE ID = ?;
@@ -183,7 +183,7 @@ serviceMaps:
       tenantIdJsonPath: $.tenantId
       transactionCodeJsonPath: $.clientReferenceId
       #below twofields of audit are applied on the whole object recieved in the kafka
-      userUuidJsonPath: $.[0].auditDetails.lastModifiedBy
+      # userUuidJsonPath: $.[0].auditDetails.lastModifiedBy
       auditAttributeBasePath: $.*        
       queryMaps:
         - query: UPDATE PROJECT_TASK SET lastModifiedBy = ?, lastModifiedTime = ?, clientLastModifiedTime = ?, clientLastModifiedBy = ?, rowVersion = ?, isDeleted = ?, additionalDetails=? WHERE ID = ?;

@@ -10,7 +10,7 @@ serviceMaps:
       module: HEALTH-IDGEN
       objecIdJsonPath: $.id
       tenantIdJsonPath: $.tenantId
-      userUuidJsonPath: $.[0].auditDetails.createdBy
+      # userUuidJsonPath: $.[0].auditDetails.createdBy
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.idTransactionLog.*
       queryMaps:
